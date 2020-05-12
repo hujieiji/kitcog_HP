@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*header*/
+header{
+  padding: 10px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom:solid #f8f8f8;
+}
+
+.navbar{
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header_navgroup{
+  margin-left: auto;
+  display: flex;
+  flex: none;
+}
+
+.header_navgroup > * + *{
+  margin-left: 60px;
+}
+
+.header_navitem{
+  font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.header_title{
+  font-size: 20px;
+  text-decoration: none;
+  color: #333333;
+}
+
+/*Carousel*/
+.Carousel{
+  width: 4215%;
+}
+
+/*footer*/
+footer{
+  padding: 25px 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+}
+
+.footer_navgroup{
+  margin: 20px;
+}
+
+.footer_navgroup > * + *{
+  margin-left: 60px;
+}
+
+.footer_tag{
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.footer_navitem{
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/*template*/
+.container{
+  max-width: 1300px;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*bodyのマージンをなくす*/
+*{
+  margin: 0px;
+}
