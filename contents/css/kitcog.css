@@ -92,6 +92,33 @@ header{
   object-fit: cover;
 }
 
+/* member */
+.member_tag{
+  margin-bottom: 60px;
+}
+
+.member_group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.member_text{
+  padding-left: 40px;
+  padding-right: 100px;
+}
+
+/* achivement */
+.archive_yeargroup{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.achive_text{
+  margin: 0 auto 30px 30px;
+}
+
 /*footer*/
 footer{
   padding: 25px 0;
