@@ -1,0 +1,171 @@
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'cogHP/style.css' %}">
+    <script src="{% static 'js/.appjs' %}"></script>
+    <title>認知行動科学研究室@KIT</title>
+</head>
+<body>
+
+<div class="wrapper-navbar sticky-top ">
+    <div class="container">
+        <div class="navbar navbar-expand-lg navbar-light navbar-custom ">
+            <a class="navbar-brand" href="{% url 'top' %}">
+                <img src="{% static 'cogHP/icon/cog_icon.png' %}" height=40px alt="*">
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav navbar-right">
+                    <a class="nav-item nav-link" href="{% url 'top' %}">
+                        <img src="{% static 'cogHP/icon/top.svg' %}" width=15px alt="*">
+                        <p class="navitem-text">トップ</p>
+                    </a>
+                    <a class="nav-item nav-link" href="{% url 'top' %}#reserch">
+                        <img src="{% static 'cogHP/icon/research.svg' %}" width=15px alt="*">
+                        <p class="navitem-text">研究内容</p>
+                    </a>
+                    <a class="nav-item nav-link" href="{% url 'achivements' %}">
+                        <img src="{% static 'cogHP/icon/achivements.svg' %}" width=15px alt="*">
+                        <p class="navitem-text">研究実績</p>
+                    </a>
+                    <a class="nav-item nav-link" href="{% url 'top' %}#member">
+                        <img src="{% static 'cogHP/icon/member.svg' %}" width=15px alt="*">
+                        <p class="navitem-text">メンバー</p>
+                    </a>
+                    <a class="nav-item nav-link" href="{% url 'index' %}">
+                        <img src="{% static 'cogHP/icon/participants.svg' %}" width=15px alt="*">
+                        <p class="navitem-text">実験参加者募集</p>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <img src="{% static 'cogHP/image/photo_3.jpg' %}" alt="about_cog" class="img-fluid">
+
+    <h1 class="contents_title">認知行動科学研究室とは</h1>
+
+    <div class="contents">
+        <h2 class="text-justify contents_text" style="font-size: 15px;">
+            <strong>『人とモノ』 のより良いインタラクション</strong>のために、モノを扱う人側に立ち、実験心理学・心理化学の手法によって、人の認知的・心理的側面を科学的に解明していく。人は個人差を有するため、ここが持つ特性を把握していくことによって、より多くの人が満足できるモノのデザイン設計指標を構築することを目標とする。
+        </h2>
+        <div class="img-wrapper">
+            <img src="{% static 'cogHP/image/aboutcog.png' %}" alt="about_cog" class="img-fluid contents_img" id="about_cog">
+        </div>
+    </div>
+
+    <div id="member">
+        <h1 class="contents_title">メンバー</h1>
+
+        <div class="contents">
+            <div class="member_group">
+                <h2 class="member_tag">教員</h2>
+                <div class="member_items">
+                    <div class="member_item bg-member" id="Teacher">
+                        <a href="https://researchmap.jp/yukikonishizaki" style="text-decoration: none;">
+                            <a href="https://researchmap.jp/yukikonishizaki" class="link">
+                                <h2 class="member_text">西崎 友規子</h2>
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member_group">
+                <h2 class="member_tag">M2　</h2>
+                <div class="member_items">
+                    <div class="member_item bg-member" id="M2_1">
+                        <h2 class="member_text">塩谷 和朗</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M2_2">
+                        <h2 class="member_text">草野 泰輝</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M2_3">
+                        <h2 class="member_text">福井 将人</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M2_4">
+                        <h2 class="member_text">光國 和宏</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member_group">
+                <h2 class="member_tag">M1　</h2>
+                <div class="member_items">
+                    <div class="member_item bg-member" id="M1_1">
+                        <h2 class="member_text">打谷 拓巳</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M1_2">
+                        <h2 class="member_text">大岸 真理子</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M1_3">
+                        <h2 class="member_text">笹木 海志</h2>
+                    </div>
+                    <div class="member_item bg-member" id="M1_4">
+                        <h2 class="member_text">森嵜 洋之</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member_group">
+                <h2 class="member_tag">B4　</h2>
+                <div class="member_items">
+                    <div class="member_item bg-member" id="B4_1">
+                        <h2 class="member_text">麻生 智史</h2>
+                    </div>
+                    <div class="member_item bg-member" id="B4_2">
+                        <h2 class="member_text">鎌苅 亮汰</h2>
+                    </div>
+                    <div class="member_item bg-member" id="B4_3">
+                        <h2 class="member_text">八尾 恵利花</h2>
+                    </div>
+                    <div class="member_item bg-member" id="B4_4">
+                        <h2 class="member_text">吉松 駿平</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reserch">
+        <h1 class="contents_title">研究内容</h1>
+
+        <div class="contents">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <h6 class="footer_tag"><strong>リンク</strong></h6>
+        <nav class="footer_navgroup">
+            <a class="footer_navitem" href="https://www.kit.ac.jp/" target="_blank"
+               rel="noreferrer noopener">京都工芸繊維大学</a>
+            <a class="footer_navitem" href="http://www.is.kit.ac.jp/" target="_blank" rel="noreferrer noopener">情報工学課程・情報工学専攻</a>
+        </nav>
+        <h6 class="footer_tag">© 2020 COG@KIT</h6>
+    </div>
+</footer>
+
+<!--js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
